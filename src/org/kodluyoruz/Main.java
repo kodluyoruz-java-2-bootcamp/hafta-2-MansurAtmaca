@@ -9,13 +9,14 @@ public class Main
 
     public static void main(String[] args)
     {
-        // testComputer1();
-        // testComputer2();
+
+
+       testComputer1();
+       testComputer2();
     }
 
-    /*
-    private static void testComputer1()
-    {
+
+    private static void testComputer1() {
         Computer computer = new Computer();
 
         CPU cpu = new CPU();
@@ -61,10 +62,13 @@ public class Main
 
         final double totalPrice = computer.getTotalPrice();
         final double estimatedTotalPrice = 8897.67;
-        if (estimatedTotalPrice != totalPrice)
-        {
+        if (estimatedTotalPrice != totalPrice) {
             throw new RuntimeException(String.format("Fiyat hesaplama metodunuz yanlış! Beklenen: %.2f Çıkan: %.2f", estimatedTotalPrice, totalPrice));
         }
+
+
+
+
 
         final int totalPower = computer.getTotalPower();
         final int estimatedTotalPower = 550;
@@ -119,12 +123,14 @@ public class Main
         computer.setGpu(gpu);
         computer.setSsd(ssd);
 
-        final double totalPrice = computer.getTotalPrice();
+         final double totalPrice = computer.getTotalPrice();
         final double estimatedTotalPrice = 10783.57;
         if (estimatedTotalPrice != totalPrice)
         {
             throw new RuntimeException(String.format("Fiyat hesaplama metodunuz yanlış! Beklenen: %.2f Çıkan: %.2f", estimatedTotalPrice, totalPrice));
         }
+
+
 
         final int totalPower = computer.getTotalPower();
         final int estimatedTotalPower = 530;
@@ -132,7 +138,11 @@ public class Main
         {
             throw new RuntimeException(String.format("Güç tüketimi hesaplama metodunuz yanlış! Beklenen: %d Çıkan: %d", estimatedTotalPower, totalPower));
         }
+
+
     }
-    */
+
+
+
 
 }

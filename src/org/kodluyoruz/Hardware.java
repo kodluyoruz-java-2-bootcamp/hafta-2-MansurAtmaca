@@ -12,4 +12,42 @@ package org.kodluyoruz;
  */
 public abstract class Hardware
 {
+    private String brand;
+    private double price;
+    private  int power;
+
+    public Hardware() {
+    }
+
+    public Hardware(String brand, double price, int power) {
+        this.brand = brand;
+        this.price = price;
+        if (power>=1&&power<=150)
+            this.power=power;
+        else System.out.println("Değer aralığı dışı power!");
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
+    }
 }
